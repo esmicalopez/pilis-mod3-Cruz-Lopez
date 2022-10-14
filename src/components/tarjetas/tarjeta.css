@@ -1,0 +1,25 @@
+.icon-delete{
+height: 10%;
+opacity: 0.3;
+transition: 0.3s;
+position: relative;
+left: 44%;
+top: 2%;
+}
+.icon-delete:hover{
+    opacity: 1;
+
+}
+.card{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    opacity: 0.6;
+    transition: 0,5s;
+}
+.card:hover{
+    opacity: 1;
+}

@@ -1,5 +1,6 @@
 //componente padre de tarjeta, contiene las tarjetas predeterminadas para mostrar en el HOME.
 
+import './tarjetas.css'
 import {Tarjeta, TarjetaN, TarjetaI} from "./tarjeta"
 
 const CardList = [
@@ -42,12 +43,12 @@ const CardList = [
 ]
 
 export const Tarjetas = () =>{
+
     return (
         CardList.map (card =>
-        <Tarjeta name={card.name} latitud={card.Latitud} longitud={card.Longitud} temperatura={card.Temperatura} velocidad={card.VelocidadDelViento} eliminar={card.Delete}/>)
+        <Tarjeta id= {card.id} name={card.name} latitud={card.Latitud} longitud={card.Longitud} temperatura={card.Temperatura} velocidad={card.VelocidadDelViento} eliminar={card.Delete}/>)
     )
 }
-
 
 const CardListN = [
     {

@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+.name-page{
+  margin-top: 5%;
+}
+
+.grid-card{
+  max-width: max-content;
+  margin-top: 11%;
+}
+.container{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}

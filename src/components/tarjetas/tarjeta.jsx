@@ -1,70 +1,108 @@
-import {FiTrash2,FiXSquare} from "react-icons/fi"
+import { useContext, useId, useState } from "react";
+import { FiTrash2, FiXSquare } from "react-icons/fi"
+import { DeleteContext } from "../../context/DeleteContext";
+import './tarjeta.css'
+
+
+
 //contiene los componenetes de cada TARJETA PROV.
-export const Tarjeta = ({ name, latitud, longitud, temperatura, velocidad, eliminar}) => {
+
+
+export const Tarjeta = ({ id, name, latitud, longitud, temperatura, velocidad }) => {
+/* 
+    const {borrar, setDelete} = useContext(DeleteContext);
+    
+    const handleDelete = () => {
+        const TarjetasFiltered = borrar.filter(
+            (Tarjeta) => Tarjeta.id === id
+        );
+        setDelete(TarjetasFiltered);
+    } */
+
+    function quitar(){
+document.getElementById("tarjeta").remove(this)
+    }
+
     return (
-        <div className="card-container">
-            <div className='card' style={{ backgroundColor: 'red' }}>
-                <h3>Nombre: {name}</h3>
+        <div className="card-container" key={id} id="tarjeta">
+            <div className="icon-delete" onClick= {quitar}>
+            <FiXSquare />
+            </div>
+            <div className='card'>
+                <h3>{name}</h3>
+                <img src="./as" alt="aqui va una imagen"/>
                 <li>Latitud: {latitud}</li>
                 <li>Longitud: {longitud}</li>
                 <li>Temperatura: {temperatura}</li>
                 <li>Vel. del Viento: {velocidad}</li>
             </div>
-            <div className="icon-delete">
-                { eliminar ? (
-                    <FiXSquare className='delete' />
-                ) : (
-                    <FiTrash2 />
-                )}
-            </div>
         </div>
-
     );
 }
 
 
-//contiene los componenetes de cada TARJETA NACIONAL.
-export const TarjetaN = ({ name, latitud, longitud, temperatura, velocidad, eliminar}) => {
-    return (
-        <div className="card-container">
-            <div className='card' style={{ backgroundColor: 'red' }}>
-                <h3>Nombre: {name}</h3>
-                <li>Latitud: {latitud}</li>
-                <li>Longitud: {longitud}</li>
-                <li>Temperatura: {temperatura}</li>
-                <li>Vel. del Viento: {velocidad}</li>
-            </div>
-            <div className="icon-delete">
-                { eliminar ? (
-                    <FiXSquare className='delete' />
-                ) : (
-                    <FiTrash2 />
-                )}
-            </div>
-        </div>
 
-    );
-}
-
-//contiene los componenetes de cada TARJETA Internacional.
-export const TarjetaI = ({ name, latitud, longitud, temperatura, velocidad, eliminar}) => {
-    return (
-        <div className="card-container">
-            <div className='card' style={{ backgroundColor: 'red' }}>
-                <h3>Nombre: {name}</h3>
-                <li>Latitud: {latitud}</li>
-                <li>Longitud: {longitud}</li>
-                <li>Temperatura: {temperatura}</li>
-                <li>Vel. del Viento: {velocidad}</li>
+export const TarjetaN = ({ id, name, latitud, longitud, temperatura, velocidad }) => {
+    /* 
+        const {borrar, setDelete} = useContext(DeleteContext);
+        
+        const handleDelete = () => {
+            const TarjetasFiltered = borrar.filter(
+                (Tarjeta) => Tarjeta.id === id
+            );
+            setDelete(TarjetasFiltered);
+        } */
+    
+        function quitar(){
+    document.getElementById("tarjeta").remove(this)
+        }
+    
+        return (
+            <div className="card-container" key={id} id="tarjeta">
+                <div className="icon-delete" onClick= {quitar}>
+                <FiXSquare />
+                </div>
+                <div className='card'>
+                    <h3>{name}</h3>
+                    <img src="" alt="aqui va una imagen"/>
+                    <li>Latitud: {latitud}</li>
+                    <li>Longitud: {longitud}</li>
+                    <li>Temperatura: {temperatura}</li>
+                    <li>Vel. del Viento: {velocidad}</li>
+                </div>
             </div>
-            <div className="icon-delete">
-                { eliminar ? (
-                    <FiXSquare className='delete' />
-                ) : (
-                    <FiTrash2 />
-                )}
-            </div>
-        </div>
+        );
+    }
 
-    );
-}
+
+    export const TarjetaI = ({ id, name, latitud, longitud, temperatura, velocidad }) => {
+        /* 
+            const {borrar, setDelete} = useContext(DeleteContext);
+            
+            const handleDelete = () => {
+                const TarjetasFiltered = borrar.filter(
+                    (Tarjeta) => Tarjeta.id === id
+                );
+                setDelete(TarjetasFiltered);
+            } */
+        
+            function quitar(){
+        document.getElementById("tarjeta").remove(this)
+            }
+        
+            return (
+                <div className="card-container" key={id} id="tarjeta">
+                    <div className="icon-delete" onClick= {quitar}>
+                    <FiXSquare />
+                    </div>
+                    <div className='card'>
+                        <h3>{name}</h3>
+                        <img src="" alt="aqui va una imagen"/>
+                        <li>Latitud: {latitud}</li>
+                        <li>Longitud: {longitud}</li>
+                        <li>Temperatura: {temperatura}</li>
+                        <li>Vel. del Viento: {velocidad}</li>
+                    </div>
+                </div>
+            );
+        }

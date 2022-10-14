@@ -1,9 +1,10 @@
-/*GRID modifica los estilos EXTERNOS de cada tarjeta tarjeta */
-
-.card-container{
-  width: 320px;
-}
-.card{
-  width: 300px;
+body{
+    margin: 0px;
 }
 
+#root{
+    background-image: url("./assets/salinas-grandes-jujuy-4-fcbk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
