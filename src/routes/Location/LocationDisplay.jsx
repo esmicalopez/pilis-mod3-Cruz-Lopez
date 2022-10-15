@@ -10,10 +10,11 @@ const LocationDisplay = () => {
     (location) => location.id === Number(id)
   );
 
+  <h2>Tarjetas del Usuario</h2>
   return (
     <div className="location-display-container">
       <div className="location-display-card">
-        <h1 className="location-display-name">{location.name}</h1>
+        <h1 className="location-display-name"> {location.name}</h1>
         <li>Latitud: {location.latitud}</li>
         <li>Longitud:{location.longitud}</li>
         <li>Temperatura :{location.temperature} C°</li>

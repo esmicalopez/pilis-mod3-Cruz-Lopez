@@ -1,18 +1,28 @@
-.sign-in-container, .sign-in-form {
+.sign-in-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px 20px 20px 20px;
+  border-radius: 15px;
+}
+
 .input-form {
-  background: none;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.5);
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
   border: none;
-  border-radius: 0;
+  border-radius: 5px;
   border-bottom: 1px solid #000;
   margin: 25px 0;
 }
@@ -21,14 +31,15 @@
   outline: none;
 }
 
-.btn-form, back {
+.btn-form,
+back {
   min-width: 165px;
   width: auto;
   height: 50px;
   border-radius: 5px;
   letter-spacing: 0.5px;
   line-height: 50px;
-  padding: 0 35px 0 35px;
+  padding: 0px 35px 0 35px;
   font-size: 15px;
   background-color: black;
   color: white;
@@ -37,6 +48,5 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 15px;
 }
-

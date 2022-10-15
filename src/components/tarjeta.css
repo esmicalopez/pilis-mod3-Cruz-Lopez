@@ -1,13 +1,13 @@
 .icon-delete1 {
     height: 10%;
     opacity: 0.3;
-    transition: 0.3s;
+    transition: 0.1s;
     position: relative;
     left: 44%;
     top: 2%;
 }
 
-.icon-delete:hover {
+.icon-delete1:hover {
     opacity: 1;
 
 }
@@ -19,14 +19,25 @@
     align-items: center;
     flex-direction: column;
     height: 90%;
-    opacity: 0.6;
-    transition: 0, 5s;
+/*     opacity: 0.6;
+    transition: 0, 5s; */
 }
 
-.card:hover {
+/* .card:hover {
     opacity: 1;
-}
+} */
 
 .li{
     list-style: none;
+}
+
+.imgs{
+    margin: 10px 10px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  /*   border: 10px solid rgba(0,0,0,0.25); */
+    object-fit: cover;
 }

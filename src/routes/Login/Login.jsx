@@ -18,8 +18,8 @@ const Login = () => {
 
   return (
     <div className='sign-in-container'>
-      <span>Ingresar usuario y contraseña</span>
       <form className='sign-in-form' onSubmit={handleSubmit(onSubmit)}>
+      <span>Ingresar usuario y contraseña</span>
         <input
           className='input-form'
           type="text"

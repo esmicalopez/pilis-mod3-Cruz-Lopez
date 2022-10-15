@@ -15,8 +15,6 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='name-page'>PRO-METEO</div>
-      <div> BUSCADOR </div>
       <Routes>
         <Route path='/' element={<Navigation />}>
           <Route index element={<Home />} />
@@ -25,12 +23,13 @@ function App() {
           <Route path='location/create' element={<LocationCreation />} />
         </Route>
       </Routes>
+      <div className='name-page'><h1>PROMETEO</h1> <h6>Crea Tarjetas del Clima, GRATISS¡¡¡</h6></div>
       <div className='grid-card'>
-        <h2>Tarjetas Provinciales</h2><br />
+        <h2 className='line'>Tarjetas Provinciales</h2>
         <div className='container'><Tarjetas /></div>
-        <h2>Tarjetas Nacionales</h2>
+        <h2 className='line'>Tarjetas Nacionales</h2>
         <div className='container'><TarjetasN /></div>
-        <h2>Tarjetas Internacionales</h2>
+        <h2 className='line'>Tarjetas Internacionales</h2>
         <div className='container'><TarjetasI /></div>
       </div>
     </div>

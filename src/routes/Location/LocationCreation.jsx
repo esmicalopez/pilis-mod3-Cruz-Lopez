@@ -52,8 +52,9 @@ const LocationCreation = () => {
 
   return (
     <div className="location-new-container">
-      <span>Ingresa una nueva ubicación</span>
+      
       <form className="location-form" onSubmit={handleSubmit(createLocation)}>
+      <span className="title-form">Ingresa una nueva ubicación</span>
         <input
           className="input-location-name-form"
           type="text"
