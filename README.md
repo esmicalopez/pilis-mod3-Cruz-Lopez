@@ -7,7 +7,7 @@ Prometeo es una **aplicacion de datos metereologicos,** donde cada tarjeta muest
 🔗 https://open-meteo.com/
 
 ## Funcionalidad:
-En su version 1.0 uenta con funcionalidades básicas:
+En su version 1.0 cuenta con funcionalidades básicas:
 - 🟢 Iniciar Sesión.
 - 🔴 Cerrar Sesión.
 - 🔍 Un buscador
@@ -27,6 +27,6 @@ En su version 1.0 uenta con funcionalidades básicas:
 - JAVASCRIPT
 
 ## Desarrolladores
-👨‍💻 Cristian Tito 👨‍💻 ➡️ https://github.com/Cris-2022
+👨‍💻 Cristian Cruz 👨‍💻 ➡️ https://github.com/Cris-2022
 
 👩‍💻 Micaela Lopez 👩‍💻 ➡️ https://github.com/esmicalopez
