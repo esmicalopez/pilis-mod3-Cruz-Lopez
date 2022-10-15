@@ -1,4 +1,4 @@
-# PROMETEO   <img src="./src/assets/Logo.png" alt="Prometeo-Logo" width="3%" height="3%"/>
+# PROMETEO   <img src="./src/assets/logo.png" alt="Prometeo-Logo" width="3%" height="3%"/>
 
 ## Descripción:
 Prometeo es una **aplicacion de datos metereologicos,** donde cada tarjeta muestra el nombre de la ciudad, latitud, longitud, temperatura y velocidad del viento.
