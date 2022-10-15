@@ -1,10 +1,15 @@
-body{
-    margin: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-#root{
-    background-image: url("./assets/salinas-grandes-jujuy-4-fcbk.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
+/* #root{
+background-image: url("./assets/fondo-salinas-grandes.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+} */

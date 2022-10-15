@@ -1,0 +1,18 @@
+header {
+  padding: 50px;
+}
+
+.main-container {
+  max-width: max-content;
+  margin-top: 11%;
+  margin: 0 auto;
+}
+.grid1{
+  max-width: max-content;
+margin-top: 11%;
+margin: 0 auto;
+}
+
+header {
+  padding: 0px;
+}
